@@ -6,17 +6,28 @@ import CodeIcon from '@material-ui/icons/Code';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
 import Navbar from '../Components/Navbar/Navbar';
-import RotatingCard from '../Components/RotatingCard/RotatingCard';
-import styles from '../styles/Home.module.css';
 import Footer from '../Components/Footer/Footer';
-import FloatingCard from '../Components/FloatingCard/FloatingCard';
+import { HomeContainer } from '../styles/HomeStyles';
+import SectionIntro from '../Sections/HomePageSections/SectionIntro/SectionIntro';
+import SectionInfo from '../Sections/HomePageSections/SectionInfo/SectionInfo';
+import SectionSkills from '../Sections/HomePageSections/SectionSkills/SectionSkills';
+import SectionProject from '../Sections/HomePageSections/SectionProjects/SectionProject';
 
 const Home = () => {
   return (
-    <div className={styles.container}>
+    <HomeContainer>
       <Head>
-        <title>Create Next App</title>
+        <title>Nam Nguyen - Developer Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Nam Vu Hoang Nguyen is a Full-Stack Web Developer (React, Angular, Node, .Net) in Toronto, Canada. Currently pursuing a B.Sc. in Computer Science at York University."
+        />
+        <meta
+          name="keywords"
+          content="Nam Nguyen, Portfolio, Profile, York University, Student, Full-Stack, Developer, Website, Webapp"
+        />
+        <meta name="author" content="Nam Nguyen" />
       </Head>
 
       <Navbar bgColor="#23232e">
@@ -64,24 +75,18 @@ const Home = () => {
         </ul>
       </Navbar>
 
-      <main className={styles.main}>
-        <FloatingCard
-          title="front-end"
-          items={[
-            'html | css | javascript',
-            'sass | bootstrap | materialize',
-            'figma | adobexd',
-            'react & redux | angular'
-          ]}
-          imgSrc="front-end.svg"
-        />
+      <main>
+        <SectionIntro />
+        <SectionInfo />
+        <SectionSkills />
+        <SectionProject />
       </main>
 
       <Footer>
         &copy; 2020 by Nam Nguyen. All rights reserved. Free to use for learning
         purposes.
       </Footer>
-    </div>
+    </HomeContainer>
   );
 };
 

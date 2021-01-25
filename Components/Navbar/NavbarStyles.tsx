@@ -70,7 +70,7 @@ export const NavbarContainer = styled.nav<NavbarProps>`
     height: 100vh;
 
     &:hover {
-      width: 18rem;
+      width: 20rem;
 
       .link-text {
         transform: translateX(0);

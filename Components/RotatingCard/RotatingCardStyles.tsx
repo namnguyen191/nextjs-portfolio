@@ -79,7 +79,12 @@ export const CardContainer = styled.div<RotatingCardProps>`
           font-weight: 400;
           text-transform: uppercase;
           text-align: right;
-          color: #f9f7f6;
+          color: ${({ primaryColor }) => {
+            if (!primaryColor) {
+              return '#161515';
+            }
+            return '#f9f7f6';
+          }};
           position: absolute;
           top: 4rem;
           right: 1.25rem;
@@ -87,7 +92,7 @@ export const CardContainer = styled.div<RotatingCardProps>`
           line-height: 2.4rem;
 
           span {
-            padding: 0.625rem 0.9375rem;
+            padding: 0.625rem 1.6rem;
             box-decoration-break: clone;
             background-image: linear-gradient(
               to right bottom,
@@ -142,7 +147,7 @@ export const CardContainer = styled.div<RotatingCardProps>`
       background-image: linear-gradient(
         to right bottom,
         #000,
-        ${({ primaryColor = '#fff' }) => chroma(primaryColor).darken(1.3).hex()}
+        ${({ primaryColor = '#fff' }) => chroma(primaryColor).darken(0.5).hex()}
       );
 
       a {
@@ -172,11 +177,11 @@ export const CardContainer = styled.div<RotatingCardProps>`
         transition: all 0.2s;
 
         background-image: linear-gradient(
-          to right,
+          52deg,
           ${({ primaryColor = '#fff' }) =>
-            chroma(primaryColor).darken(1.5).hex()},
+            chroma(primaryColor).darken(1).hex()},
           ${({ primaryColor = '#fff' }) =>
-            chroma(primaryColor).brighten(1.5).hex()}
+            chroma(primaryColor).brighten(1.8).hex()}
         );
 
         @media only screen and (hover: none) {
@@ -199,7 +204,7 @@ export const CardContainer = styled.div<RotatingCardProps>`
         transition: all 200ms ease;
 
         &:hover {
-          color: ${() => chroma('#101d2c').brighten(0.7).hex()}!important;
+          color: ${() => chroma('#101d2c').brighten(0.9).hex()}!important;
           transform: translateY(-0.8rem);
         }
       }
