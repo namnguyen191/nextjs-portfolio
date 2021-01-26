@@ -8,7 +8,7 @@ const SectionSkills: React.FC<SectionSkillsProps> = (props) => {
   const {} = props;
 
   return (
-    <SectionSkillsContainer>
+    <SectionSkillsContainer id="stacks">
       <FloatingCard
         imgSrc="/front-end.svg"
         items={[

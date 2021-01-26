@@ -8,7 +8,7 @@ const SectionProject: React.FC<SectionProjectProps> = (props) => {
   const {} = props;
 
   return (
-    <SectionProjectContainer>
+    <SectionProjectContainer id="projects">
       <h3>PROJECTS PORTFOLIO</h3>
       <div className="cards-container">
         <RotatingCard

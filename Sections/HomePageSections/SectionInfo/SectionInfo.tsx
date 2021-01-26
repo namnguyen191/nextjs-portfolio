@@ -10,7 +10,7 @@ const SectionInfo: React.FC<SectionInfoProps> = (props) => {
   const {} = props;
 
   return (
-    <SectionInfoContainer>
+    <SectionInfoContainer id="about">
       <div className="container">
         <h3>About Me</h3>
         <p>

@@ -50,3 +50,10 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+/* Space for navbar */
+@media only screen and (max-width: 1200px) {
+  body {
+    margin-bottom: 7rem;
+  }
+}

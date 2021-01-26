@@ -5,14 +5,16 @@ import { SectionIntroContainer } from './SectionIntroStyles';
 
 const SectionIntro: React.FC = () => {
   return (
-    <SectionIntroContainer>
+    <SectionIntroContainer id="home">
       <div className="head-lines">
         <h1>
           Nam Nguyen The{' '}
-          <TypeWriter
-            writerTexts={['Developer', 'Designer', 'Learner']}
-            pauseTime={1500}
-          />
+          <div className="type-writer-container">
+            <TypeWriter
+              writerTexts={['Developer', 'Designer', 'Learner']}
+              pauseTime={1500}
+            />
+          </div>
         </h1>
         <span>Welcome to my page!</span>
       </div>

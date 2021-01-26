@@ -8,4 +8,10 @@ export const HomeContainer = styled.div`
     flex-direction: column;
     gap: 10rem;
   }
+
+  @media only screen and (max-width: 1200px) {
+    main {
+      margin-left: 0;
+    }
+  }
 `;

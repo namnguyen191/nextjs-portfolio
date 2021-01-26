@@ -7,6 +7,10 @@ export const AnimatedLinkContainer = styled.span`
   text-decoration: none;
   font-size: 2.5rem;
 
+  @media only screen and (max-width: 600px) {
+    font-size: 2rem;
+  }
+
   &::after {
     content: '';
     border-radius: 1rem;

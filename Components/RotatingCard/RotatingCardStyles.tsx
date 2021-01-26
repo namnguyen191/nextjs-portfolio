@@ -7,13 +7,13 @@ export const CardContainer = styled.div<RotatingCardProps>`
   position: relative;
   perspective: 200rem;
   width: 20rem;
-  max-width: 95vh;
+  max-width: 95vw;
   height: 28.125rem;
 
   /* Support for non-hover */
   @media only screen and (hover: none) {
     display: grid;
-    height: 40rem;
+    height: 43rem;
     grid-template-rows: 2fr 1.3fr;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
     background-image: linear-gradient(

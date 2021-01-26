@@ -5,7 +5,7 @@ export const FloatingCardContainer = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  width: 20vw;
+  width: 22rem;
 
   padding: 0.8rem 2rem;
 
