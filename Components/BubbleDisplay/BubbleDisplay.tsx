@@ -1,5 +1,4 @@
 import React, { memo } from 'react';
-import Image from 'next/image';
 
 import { BubbleDisplayContainer } from './BubbleDisplayStyles';
 
@@ -15,7 +14,7 @@ const BubbleDisplay: React.FC<BubbleDisplayProps> = (props) => {
 
   return (
     <BubbleDisplayContainer>
-      <Image src={imgUr} alt={`${title} image`} width={85} height={85} />
+      <img src={imgUr} alt={`${title} image`} />
       <div className="text-container">
         <a href={url} target="_blank">
           <span className="title">{title}</span>

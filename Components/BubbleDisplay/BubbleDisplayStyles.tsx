@@ -36,8 +36,8 @@ export const BubbleDisplayContainer = styled.div`
   }
 
   img {
-    /* width: 4.5rem;
-    height: 4.5rem; */
+    width: 4.5rem;
+    height: 4.5rem;
     border-radius: 100rem;
   }
 `;

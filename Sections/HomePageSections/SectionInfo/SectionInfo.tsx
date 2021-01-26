@@ -1,5 +1,4 @@
 import React, { memo } from 'react';
-import Image from 'next/image';
 
 import AnimatedLink from '../../../Components/AnimatedLink/AnimatedLink';
 import { SectionInfoContainer } from './SectionInfoStyles';
@@ -28,21 +27,21 @@ const SectionInfo: React.FC<SectionInfoProps> = (props) => {
       <div className="container">
         <h3>Contact Me At:</h3>
         <span className="contact-link-container">
-          <Image src="/linkedin.svg" alt="Linked Icon" width={35} height={35} />
+          <img src="/linkedin.svg" alt="Linked Icon" width={35} height={35} />
           <AnimatedLink
             linkName="@LinkedIn: Nam Nguyen"
             url="https://www.linkedin.com/in/nguyen-vu-hoang-nam-865226132"
           />
         </span>
         <span className="contact-link-container">
-          <Image src="/gmail.svg" alt="Gmail Icon" width={35} height={35} />
+          <img src="/gmail.svg" alt="Gmail Icon" width={35} height={35} />
           <AnimatedLink
             linkName="@GMail: hoangnamnguyen191"
             url="mailto:hoangnamnguyen191@gmail.com"
           />
         </span>
         <span className="contact-link-container">
-          <Image src="/github.svg" alt="Github Icon" width={35} height={35} />
+          <img src="/github.svg" alt="Github Icon" width={35} height={35} />
           <AnimatedLink
             linkName="@GitHub: namnguyen191"
             url="https://github.com/namnguyen191"
