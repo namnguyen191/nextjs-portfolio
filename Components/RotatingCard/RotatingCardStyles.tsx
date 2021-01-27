@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 import chroma from 'chroma-js';
 
-import { RotatingCardProps } from './RotatingCard';
+type Props = {
+  imgUrl: string;
+  primaryColor?: string;
+};
 
-export const CardContainer = styled.div<RotatingCardProps>`
+export const CardContainer = styled.div<Props>`
   position: relative;
   perspective: 200rem;
   width: 20rem;

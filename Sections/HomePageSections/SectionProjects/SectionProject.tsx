@@ -1,4 +1,5 @@
 import React, { memo } from 'react';
+import CustomEndingCard from '../../../Components/CustomEndingCard/CustomEndingCard';
 import RotatingCard from '../../../Components/RotatingCard/RotatingCard';
 import { SectionProjectContainer } from './SectionProjectStyles';
 
@@ -88,7 +89,7 @@ const SectionProject: React.FC<SectionProjectProps> = (props) => {
         />
         <RotatingCard
           description="A RECIPE MANAGER WEBSITE BUILT WITH ANGULAR"
-          imgUrl="/recipe-app.jpg"
+          imgUrl="/recipe-app.webp"
           stacks={['Angular', 'Bootstrap', 'typescript', 'firebase']}
           title="Angular Recipe Manager"
           githubUrl="https://github.com/namnguyen191/angular-recipe-app"
@@ -103,6 +104,15 @@ const SectionProject: React.FC<SectionProjectProps> = (props) => {
           siteUrl="https://namnguyen191.github.io/forkify/"
           primaryColor="#FBDB89"
         />
+        <RotatingCard
+          description="A SIMPLE WEBSITE TO PROMOTE THE YUHACK HACKATHON EVENT"
+          imgUrl="/yuHacks-Logo.png"
+          stacks={['html', 'css', 'js', 'gulp']}
+          title="YuHacks Hackathon"
+          siteUrl="https://yuhacks.info/"
+          primaryColor="#2d698a"
+        />
+        <CustomEndingCard />
       </div>
     </SectionProjectContainer>
   );

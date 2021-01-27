@@ -15,10 +15,18 @@ export type RotatingCardProps = {
 };
 
 const RotatingCard: React.FC<RotatingCardProps> = (props) => {
-  const { title, stacks, description, siteUrl, githubUrl } = props;
+  const {
+    title,
+    stacks,
+    description,
+    siteUrl,
+    githubUrl,
+    imgUrl,
+    primaryColor
+  } = props;
 
   return (
-    <CardContainer {...props}>
+    <CardContainer imgUrl={imgUrl} primaryColor={primaryColor}>
       <div className="card__side card__side--front">
         <div className="top">
           <div className="title">
