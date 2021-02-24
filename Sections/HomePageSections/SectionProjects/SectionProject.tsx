@@ -65,8 +65,8 @@ const SectionProject: React.FC<SectionProjectProps> = (props) => {
             'cloudinary'
           ]}
           title="DatingApp: An E-Date Service"
-          githubUrl="https://github.com/namnguyen191/DatingApp"
-          siteUrl="https://udemydatingapp.azurewebsites.net/"
+          githubUrl="https://github.com/namnguyen191/DatingAppV2-dotnet5"
+          siteUrl="https://dotnet5-datingapp.herokuapp.com/"
           primaryColor="#c34113"
         />
         <RotatingCard

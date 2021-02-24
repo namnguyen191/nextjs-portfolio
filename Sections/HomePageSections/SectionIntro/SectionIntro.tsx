@@ -37,7 +37,7 @@ const SectionIntro: React.FC = () => {
           title="DatingApp"
           description="Angular | .net core"
           imgUr="/dating-app-crop.webp"
-          url="https://udemydatingapp.azurewebsites.net/"
+          url="https://dotnet5-datingapp.herokuapp.com/"
         />
       </div>
     </SectionIntroContainer>
