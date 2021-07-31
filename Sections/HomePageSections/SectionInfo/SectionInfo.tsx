@@ -15,8 +15,8 @@ const SectionInfo: React.FC<SectionInfoProps> = (props) => {
         <p>
           Hi there! I'm Nam Nguyen from Toronto, Canada. I'm currently pursuing
           my B.Sc. in Computer Science at York University as a full-time
-          student. As a developer, I enjoy doing research on my own, solving new
-          challenges and learning new technologies. I especially open to
+          student. Being developer, I enjoy doing research on my own, solving
+          new challenges and learning new technologies. I especially open to
           criticism and always ready to learn from others.
         </p>
         <span className="quote">
@@ -30,7 +30,7 @@ const SectionInfo: React.FC<SectionInfoProps> = (props) => {
           <img src="/linkedin.svg" alt="Linked Icon" width={35} height={35} />
           <AnimatedLink
             linkName="@LinkedIn: Nam Nguyen"
-            url="https://www.linkedin.com/in/nguyen-vu-hoang-nam-865226132"
+            url="https://www.linkedin.com/in/nam-nguyen-865226132"
           />
         </span>
         <span className="contact-link-container">

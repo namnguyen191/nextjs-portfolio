@@ -83,8 +83,13 @@ const Home = () => {
       </main>
 
       <Footer>
-        &copy; 2020 by Nam Nguyen. All rights reserved. Free to use for learning
-        purposes.
+        &copy; 2021 by Nam Nguyen. All rights reserved. &nbsp;
+        <a
+          href="https://github.com/namnguyen191/nextjs-portfolio"
+          style={{ color: 'blue' }}
+        >
+          Free to use for learning purposes.
+        </a>
       </Footer>
     </HomeContainer>
   );

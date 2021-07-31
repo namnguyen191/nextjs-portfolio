@@ -112,6 +112,23 @@ const SectionProject: React.FC<SectionProjectProps> = (props) => {
           siteUrl="https://yuhacks.info/"
           primaryColor="#2d698a"
         />
+        <RotatingCard
+          description="A COOL PROJECT TO SHARPEN MY ANGULAR, CSS AND JS SKILLS"
+          imgUrl="/angular-50-bg.webp"
+          stacks={['angular', 'scss', 'js', 'html']}
+          title="Angular 50 Projects"
+          siteUrl="https://namnguyen191.github.io/fifty-projects/"
+          githubUrl="https://github.com/namnguyen191/fifty-projects"
+          primaryColor="#4087e4"
+        />
+        <RotatingCard
+          description="AN ONLINE CODE EDITOR AND COMPILER. BUILT WITH CODES MAINTAINABILITY IN MIND BY USING TYPESCRIPT"
+          imgUrl="/online-compiler-bg.webp"
+          stacks={['react', 'typescript', 'redux', 'axios']}
+          title="Online Compiler"
+          githubUrl="https://github.com/namnguyen191/OnlineCompiler"
+          primaryColor="#200a5a"
+        />
         <CustomEndingCard />
       </div>
     </SectionProjectContainer>
